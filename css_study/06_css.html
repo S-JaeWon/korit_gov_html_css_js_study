@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #container {
+                width: 1000px;
+                height: 300px;
+                background-color: darkseagreen;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .box1 {
+                width: 150px;
+                height: 150px;
+                background-color: blueviolet;
+
+                display: flex;
+                flex-direction: column; /* 위→아래로 줄 배치 */
+                justify-content: space-between; /* 위/가운데/아래로 3줄 배치 */
+            }
+
+            .row {
+                display: flex;
+                width: 100%;
+            }
+
+            /* 윗줄: 좌/우 모서리 */
+            .row-top {
+                justify-content: space-between;
+            }
+
+            /* 가운데 줄: 정중앙 하나 */
+            .row-middle {
+                justify-content: center;
+            }
+
+            /* 아랫줄: 좌/우 모서리 */
+            .row-bottom {
+                justify-content: space-between;
+            }
+
+            .box2 {
+                width: 50px;
+                height: 50px;
+                background-color: coral;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box1">
+                <div class="row row-top">
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="row row-middle">
+                    <div class="box2"></div>
+                </div>
+                <div class="row row-bottom">
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="row row-top">
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="row row-middle">
+                    <div class="box2"></div>
+                </div>
+                <div class="row row-bottom">
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="row row-top">
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="row row-middle">
+                    <div class="box2"></div>
+                </div>
+                <div class="row row-bottom">
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="row row-top">
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="row row-middle">
+                    <div class="box2"></div>
+                </div>
+                <div class="row row-bottom">
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

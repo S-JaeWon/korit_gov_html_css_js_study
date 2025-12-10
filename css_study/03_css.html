@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS 자식 선택자</title>
+        <style>
+            #container {
+                border: 1px solid black;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            #container > p > span {
+                color: blue;
+            }
+
+            #container > p:nth-child(2) {
+                border: 1px solid aquamarine;
+            }
+
+            #container > p:nth-child(-3 + 4) {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>자식 선택자</h3>
+        <div id="container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                <span>
+                    consectetur aperiam dolores deserunt harum officiis ex
+                    natus,
+                </span>
+                quas saepe. Aspernatur laborum doloribus, minus molestias rerum
+                quisquam dolorem debitis quos ipsam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                <span>
+                    consectetur aperiam dolores deserunt harum officiis ex
+                    natus,
+                </span>
+                quas saepe. Aspernatur laborum doloribus, minus molestias rerum
+                quisquam dolorem debitis quos ipsam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                <span>
+                    consectetur aperiam dolores deserunt harum officiis ex
+                    natus,
+                </span>
+                quas saepe. Aspernatur laborum doloribus, minus molestias rerum
+                quisquam dolorem debitis quos ipsam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                <span>
+                    consectetur aperiam dolores deserunt harum officiis ex
+                    natus,
+                </span>
+                quas saepe. Aspernatur laborum doloribus, minus molestias rerum
+                quisquam dolorem debitis quos ipsam.
+            </p>
+        </div>
+    </body>
+</html>
