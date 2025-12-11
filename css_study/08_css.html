@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+
+            #root-container {
+                width: 1800px;
+                height: 1000px;
+                background-color: #dbdbdb;
+                display: flex;
+                flex-direction: column;
+            }
+            #header {
+                width: 100%;
+                height: 200px;
+                background-color: aqua;
+            }
+            #body {
+                width: 100%;
+                flex: 1;
+                background-color: brown;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            #search-container {
+                width: 100%;
+                height: 50%;
+                background-color: #dbdbdb;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #search-box {
+                width: 60%;
+                height: 70px;
+                background-color: greenyellow;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                padding: 0 16px;
+                align-items: center;
+            }
+            .search {
+                width: 98%;
+                height: 85%;
+                border: 1px solid green;
+                background-color: white;
+            }
+
+            #menu-container {
+                width: 100%;
+                height: 50%;
+                background-color: darkseagreen;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #menu-box ul {
+                width: 1100px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                background-color: fuchsia;
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                gap: 8px;
+            }
+            .menu-item {
+                width: 80px;
+                height: 40px;
+                background-color: tomato;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #article-container {
+                width: 1150px;
+                height: 90%;
+                background-color: lightcoral;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            #article-container-top,
+            #article-container-middle,
+            #article-container-bottom {
+                width: 900px;
+            }
+
+            #article-container-top {
+                height: 150px;
+                background-color: darksalmon;
+            }
+
+            #article-container-middle {
+                height: 300px;
+                background-color: dimgray;
+            }
+
+            #article-container-bottom {
+                height: 150px;
+                background-color: skyblue;
+            }
+
+            .article-box {
+                width: 100%;
+                height: 100%;
+                display: flex;
+            }
+
+            #article-container-top .article-box,
+            #article-container-bottom .article-box {
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            #article-container-middle .article-box {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .article {
+                background-color: #dbdbdb;
+                border-radius: 8px;
+            }
+
+            #article-container-top .article,
+            #article-container-bottom .article {
+                width: 48%;
+                height: 120px;
+            }
+
+            #article-container-middle .article {
+                width: 48%;
+                height: 120px;
+            }
+
+            #ad-container {
+                width: 550px;
+                height: 90%;
+                background-color: ivory;
+            }
+            #ad-box {
+                width: 100%;
+                height: 100%;
+                background-color: khaki;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root-container">
+            <div id="header">
+                <div id="search-container">
+                    <div id="search-box">
+                        <div class="search"></div>
+                    </div>
+                </div>
+                <div id="menu-container">
+                    <div id="menu-box">
+                        <ul>
+                            <li><div class="menu-item">블로그</div></li>
+                            <li><div class="menu-item">카페</div></li>
+                            <li><div class="menu-item">뉴스</div></li>
+                            <li><div class="menu-item">메일</div></li>
+                            <li><div class="menu-item">증권</div></li>
+                            <li><div class="menu-item">웹툰</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="body">
+                <div id="article-container">
+                    <div id="article-container-top">
+                        <div class="article-box">
+                            <div class="article"></div>
+                            <div class="article"></div>
+                        </div>
+                    </div>
+
+                    <div id="article-container-middle">
+                        <div class="article-box">
+                            <div class="article"></div>
+                            <div class="article"></div>
+                            <div class="article"></div>
+                            <div class="article"></div>
+                        </div>
+                    </div>
+
+                    <div id="article-container-bottom">
+                        <div class="article-box">
+                            <div class="article"></div>
+                            <div class="article"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ad-container">
+                    <div id="ad-box"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

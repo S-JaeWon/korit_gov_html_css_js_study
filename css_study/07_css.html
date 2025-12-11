@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #container1 {
+                width: 1000px;
+                height: 90px;
+                background-color: chartreuse;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            #container2 {
+                width: 1000px;
+                height: 180px;
+                background-color: #dbdbdb;
+                flex-direction: column;
+            }
+            #container3 {
+                width: 100%;
+                height: 90px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            #content {
+                justify-content: flex-end;
+            }
+
+            .box1 {
+                width: 350px;
+                height: 70px;
+                background-color: aquamarine;
+                font-size: 8px;
+                padding: 5px;
+            }
+            .box2 {
+                width: 350px;
+                height: 75px;
+                background-color: chocolate;
+                font-size: 8px;
+                padding: 5px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .box2-1 {
+                width: 60px;
+                height: 60px;
+                background-color: dodgerblue;
+            }
+            .box2-2 {
+                width: 280px;
+                height: 60px;
+                padding: 0px 20px;
+            }
+
+            .box3 {
+                width: 350px;
+                height: 75px;
+                background-color: chocolate;
+                font-size: 8px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container1">
+            <div class="box1">
+                <div id="header">
+                    <h3>제목1</h3>
+                    <div id="content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Molestiae tempora iusto aperiam earum ea
+                            cumque, est sunt, quam repellendus sed doloribus
+                            accusantium non porro itaque amet quasi beatae, eius
+                            enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box1">
+                <div id="header">
+                    <h3>제목2</h3>
+                    <div id="content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Molestiae tempora iusto aperiam earum ea
+                            cumque, est sunt, quam repellendus sed doloribus
+                            accusantium non porro itaque amet quasi beatae, eius
+                            enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container2">
+            <div id="container3">
+                <div class="box2">
+                    <div class="box2-1">img</div>
+                    <div class="box2-2">
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae tempora iusto
+                                aperiam earum ea cumque, est sunt, quam
+                                repellendus sed doloribus accusantium non porro
+                                itaque amet quasi beatae, eius enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="box2-1">img</div>
+                    <div class="box2-2">
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae tempora iusto
+                                aperiam earum ea cumque, est sunt, quam
+                                repellendus sed doloribus accusantium non porro
+                                itaque amet quasi beatae, eius enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container3">
+                <div class="box3">
+                    <div class="box2-1">img</div>
+                    <div class="box2-2">
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae tempora iusto
+                                aperiam earum ea cumque, est sunt, quam
+                                repellendus sed doloribus accusantium non porro
+                                itaque amet quasi beatae, eius enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="box2-1">img</div>
+                    <div class="box2-2">
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae tempora iusto
+                                aperiam earum ea cumque, est sunt, quam
+                                repellendus sed doloribus accusantium non porro
+                                itaque amet quasi beatae, eius enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
