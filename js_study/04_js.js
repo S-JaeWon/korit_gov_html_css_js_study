@@ -53,3 +53,23 @@ const fruits = [
 console.log(
     fruits.find((fruit) => fruit.fruit === '사과' && fruit.color === 'red')
 );
+
+console.log(names.includes('길동')); // ! [].contains();
+
+const numbers = [1, 2, 3, 4, 5];
+console.log(numbers.filter((n) => n % 2 === 0));
+console.log(numbers.map((n) => n * 10));
+
+console.log(fruits.filter((fruit) => fruit.color === 'red'));
+console.log(fruits.filter((fruit) => fruit.color.includes('pueple')));
+
+console.log(
+    fruits.map((n) => {
+        if (n.color === 'orange') {
+            return {
+                fruit: n.fruit,
+            };
+        }
+        return n;
+    })
+);
