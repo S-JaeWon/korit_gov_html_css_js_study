@@ -1,13 +1,14 @@
 // promise는 기본적으로 자바스크립트의 비동기처리에 사용되는 객체
 
 // promise 객체는 state와 result 속성을 가지고 있다.
+
 /**
  * state
  * 1) 대기(pending): 초기 상태로 비동기 작업이 아직 완료되지 않은 상태
  * result: undefined
  *
  * 2) 이행(fulfilled): 비동기 작업이 성공적으로 완료된 상태
- * result: 성고적으로 완료된 결과값
+ * result: 성공적으로 완료된 결과값
  *
  * 3) 거부 (reject): 비동기 작업이 실패한 상태
  * result: 실패한 이유(에러객체)
