@@ -124,3 +124,19 @@ const discountProducts = products
     }));
 
 console.log(discountProducts);
+
+const userState = (data) => {
+    const dataState = {
+        data: data,
+        setData: (d) => {
+            console.log(d, '데이터 set');
+        },
+    };
+
+    return [dataState.data, dataState.setData];
+};
+
+const [value, setValue] = userState(10);
+console.log(value);
+setValue(20);
+console.log(value);

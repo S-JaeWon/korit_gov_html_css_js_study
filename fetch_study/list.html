@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>게시물 목록</title>
+        <link rel="stylesheet" href="list_style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="navigation_bar">
+                <div id="navigation">네비게이션</div>
+            </div>
+            <div id="main_container">
+                <div id="title_box">
+                    <div>게시판</div>
+                    <div>자유롭게 글 써주세요.</div>
+                </div>
+                <div id="list_container">
+                    <div>게시물 <span id="count_span">0</span>건 조회</div>
+                    <table id="head_table">
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>유저ID</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div id="body_container">
+                        <table>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="list.js"></script>
+    </body>
+</html>
